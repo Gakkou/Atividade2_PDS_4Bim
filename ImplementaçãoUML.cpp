@@ -36,21 +36,23 @@ public:
 class Produto {
 private:
   int codigo;
-  std::list<preco>
+  float preco;
+  std::string nome;
+  int quantidade;
+  std::string unidade;
 public:
-
-};
-
-class Preco {
-private:
-
-public:
-
+  Produto(int c, std::string n, int qtd, std::string uni, float p);
+  ~Produto();
+  void imprimeProduto();
+  void vendido(int qtd);
 };
 
 class ItemVenda {
 private:
-
+  std::string data;
+  Produto item;
+  int quantidade;
+  Venda V;
 public:
 
 };
